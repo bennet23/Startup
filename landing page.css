@@ -1,0 +1,115 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-image: url("blur-5120x2880-bokeh-city-night-4k-6k-18462.jpg");
+    background-size: cover;
+}
+
+.navbar-brand{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: initial;
+    text-shadow: 3px 4px 4px rgb(71, 69, 69);
+}
+
+.d-flex{
+    margin: 20px;
+}
+
+h1{
+    margin: 15px;
+    color: salmon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: initial;
+    text-shadow: 3px 4px 4px rgb(71, 69, 69);
+}
+
+h1:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    0%, 100%{
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(10deg)
+    }
+    75%{
+        transform: rotate(-10deg)
+    }
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*O Pai eh uma div*/
+div>img{
+    height: 300px;
+    width: 450px;
+    margin: 4px;
+    margin-top: 10px;
+
+    transition: all 1s;
+    border: 5px solid rgba(189, 176, 176, 0.8);
+}
+
+div>img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    animation-name: pulseBorder;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes pulseBorder{
+    0%,100%{
+        border-color: rgba(189, 176, 176, 0.8);
+    }
+    30%,90%{
+        border-color: rgba(102, 95, 95, 0.8);    
+    }
+    60%{
+        border-color: rgba(5, 5, 5, 0.8);
+    }
+}
+
+.footerTitle{
+    color: salmon;
+    border-top: 3px solid rgba(247, 98, 98, 0.5);
+    border-bottom: 3px solid rgba(247, 98, 98, 0.5);
+    border-right: 3px solid rgba(247, 98, 98, 0.5);
+    width: 400px;
+    text-shadow: 1px 2px 2px rgb(187, 171, 171);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.footerTitle:hover{
+    cursor: context-menu;
+    color: red;
+    border-color: red;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button{
+    margin-top: 25px;
+    text-align: right;
+    align-content: flex-end;
+}
+
+#exampleModal{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: initial;
+}
